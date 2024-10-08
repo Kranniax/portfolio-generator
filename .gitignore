@@ -1,0 +1,13 @@
+node_modules/
+
+
+# Pro Tip:
+# We can also add node_modules/ to the .gitignore file from the command line by 
+# typing the following command:
+# echo node_modules/ > .gitignore
+
+# Important:
+# Create the .gitignore file during the initial setup of the project to avoid 
+# accidentally tracking the folder with the git add -A command. If the node_modules 
+# folder was accidentally tracked by git, use the following command to remove the 
+# tracking: git rm -r --cached node_modules.
