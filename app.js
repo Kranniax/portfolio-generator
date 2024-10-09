@@ -1,4 +1,4 @@
-import inquirer from "inquirer"; // CommonJS syntax
+import inquirer from "inquirer"; // Inport NPM module.
 // const fs = require("fs");
 // const generatePage = require('./src/page-template');
 
