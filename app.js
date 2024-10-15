@@ -1,7 +1,7 @@
 import inquirer from "inquirer"; // ES Module Import Syntax
 import { writeFile, copyFile } from "./utils/generate-site.js"; // ES Module Import Syntax
 import generatePage from "./src/page-template.js";
-import { mockData } from "./src/mock.js";
+// import { mockData } from "./src/mock.js";
 
 // A prompt asking users about themselves.
 const promptUser = () => {
@@ -147,7 +147,7 @@ const promptProject = (portfolioData) => {
 promptUser()
   .then(promptProject)
   .then((portfolioData) => {
-    return generatePage(mockData);
+    return generatePage(portfolioData);
   })
   .then((pageHTML) => {
     return writeFile(pageHTML);
